@@ -8,6 +8,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css">
+  <script>
+    // Redirect www to apex domain to avoid duplicate content and broken certs
+    (function () {
+      var host = window.location.hostname;
+      if (host === "www.iecinfotech.online") {
+        window.location.replace(window.location.href.replace("//www.", "//"));
+      }
+    })();
+  </script>
 </head>
 <body>
   <div class="page-shell">
